@@ -14,4 +14,15 @@ class DescontoCupom:
 
 class CalculadoraDesconto:
     def calcular(self, valor_original, politica):
-        raise NotImplementedError("Lógica ainda não implementada.")
+        if isinstance(politica, SemDesconto):
+            return valor_original
+
+        if isinstance(politica, DescontoPercentual):
+            desconto = valor_original * (politica.percentual / 100)
+            return valor_original - desconto
+
+        if isinstance(politica, DescontoCupom):
+            valor_final = valor_original - politica.valor
+            return max(valor_final, 0.0)
+
+        raise ValueError("Política de desconto inválida.")
