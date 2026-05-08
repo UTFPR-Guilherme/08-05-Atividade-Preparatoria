@@ -20,3 +20,17 @@ O sistema calcula o valor final de um produto a partir de uma política de desco
 
 ```bash
 python -m unittest
+
+## Commits do ciclo TDD
+
+1. red: testes iniciais
+2. green: implementação mínima
+3. refactor: padrão Strategy aplicado
+
+## Uso de IA
+
+A Inteligência Artificial foi utilizada como apoio para interpretação do enunciado, planejamento do ciclo TDD, revisão da estrutura dos testes e aplicação do padrão Strategy.
+
+## Link da interação com IA:
+
+[https://chatgpt.com/share/69fe3b43-b5f0-83e9-8821-07c82c0d08f0]
